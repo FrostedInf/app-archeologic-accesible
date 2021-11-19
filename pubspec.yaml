@@ -34,16 +34,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_native_splash: ^1.2.1
-
-flutter_native_splash:
-  color: '#ffffff'
-  image: assets/img/munal-logo.png
-  android: true
-  ios: true
-  info_plist_files:
-    - 'ios/Runner/Info-Debug.plist'
-    - 'ios/Runner/Info-Release.plist'
 
 
 # For information on the generic Dart part of this file, see the
@@ -88,20 +78,6 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - assets/img/exhibition1.jpeg
-    - assets/img/adorreyespaint.jpg
-    - assets/img/alamedapaint.jpg
-    - assets/img/apoetosispazpaint.jpg
-    - assets/img/danzapaint.jpg
-    - assets/img/germanpaint.jpg
-    - assets/img/globopaint.jpg
-    - assets/img/huelgasculpt.jpg
-    - assets/img/joseretratopaint.jpg
-    - assets/img/libertadsculpt.jpg
-    - assets/img/maternidadsculpt.jpg
-    - assets/img/metlacpaint.jpg
-    - assets/img/pesartodosculpt.jpg
-    - assets/img/reyescolonpaint.jpg
-    - assets/img/tlahuicolesculpt.jpg
-    - assets/img/leccionsculpt.jpg
+    - assets/img/tulumcroquis.png
+    - assets/img/principalEdificioTulum.jpg
     - assets/video/videolsm23recortado.mp4

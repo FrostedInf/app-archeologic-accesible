@@ -47,16 +47,11 @@ class _GlosaryDescription extends State<GlosaryDescription> {
         children: [
           Center(
               child: ListView(
-                padding: EdgeInsets.all(20.0),
-                scrollDirection: Axis.vertical,
-                children: [
-                  imageConcept,
-                  VideoPlayerScreen(),
-                  descConcept
-                ],
-              )
-          ),
-        AppBarBackArrow("Descripción"),
+            padding: EdgeInsets.all(20.0),
+            scrollDirection: Axis.vertical,
+            children: [imageConcept, VideoPlayerScreen(), descConcept],
+          )),
+          AppBarBackArrow("Descripción"),
         ],
       ),
     );

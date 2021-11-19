@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart'; // implementa los wifgets de material design
-import 'package:munal_deafs_app/ui/screens/artwork_types.dart';
-import 'package:munal_deafs_app/ui/screens/glossary_list_screen.dart';
-import 'package:munal_deafs_app/ui/screens/glossary_description.dart';
-
 import 'navigation_deaf_munal.dart';
 
 void main() {
@@ -16,7 +12,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'MUNAL app', // titulo que aparece en el task manager
+        title: 'Tulum app', // titulo que aparece en el task manager
+        theme: ThemeData(
+            primaryColor: Color(0xff0f2d52),
+            primarySwatch: Colors.blue,
+            backgroundColor: Colors.white,
+            scaffoldBackgroundColor: Colors.white,
+            textTheme: TextTheme(
+              headline1: TextStyle(color: Colors.black),
+              headline2: TextStyle(color: Colors.black),
+              bodyText1: TextStyle(color: Colors.black),
+              bodyText2: TextStyle(color: Colors.black),
+            )),
         home: NavigationDeafMunal());
   }
 }

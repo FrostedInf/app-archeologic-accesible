@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:munal_deafs_app/ui/screens/architec_list_screen.dart';
-import 'package:munal_deafs_app/ui/screens/paint_list_screen.dart';
-import 'package:munal_deafs_app/ui/screens/sculp_list_screen.dart';
 
 class MenuButtonsArtworks extends StatefulWidget {
   final String menuName;
@@ -27,17 +25,9 @@ class MenuButtonsArtworks extends StatefulWidget {
 
 class _MenuButtonsArtworks extends State<MenuButtonsArtworks> {
   void onPressButton() {
-    if (widget.identi == 0) {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => PaintListScreen()));
-      print('Hola mundo');
-    }
-
-    if (widget.identi == 1) {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => SculpListScreen()));
-    }
-
     if (widget.identi == 2) {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => ArchitecListScreen()));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => ArchitecListScreen()));
     }
   }
 
