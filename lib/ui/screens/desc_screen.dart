@@ -2,27 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:munal_deafs_app/ui/widgets/appbar_backarrow.dart';
 import 'package:munal_deafs_app/ui/widgets/videoplayer_screen.dart';
 
-class PaintDescScreen extends StatefulWidget {
+class DescScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _PaintDescScreen();
+    return _DescScreen();
   }
 }
 
-class _PaintDescScreen extends State<PaintDescScreen> {
+class _DescScreen extends State<DescScreen> {
   double top = 0;
   double left = 0;
 
   @override
   Widget build(BuildContext context) {
     final String decription =
-        """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent 
-        dignissim consequat nisl in euismod. Sed mi est, luctus a posuere eget, 
-        gravida in massa. Maecenas id mauris bibendum, feugiat magna ac, rhoncus 
-        velit. Aliquam placerat orci vel arcu gravida dapibus. Maecenas imperdiet, 
-        nunc nec tempor aliquet, elit nunc tincidunt ipsum, non venenatis neque justo 
-        non augue. Fusce vitae gravida purus. Donec eu ipsum quis tortor elementum feugiat.""";
+        """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim consequat nisl in euismod. Sed mi est, luctus a posuere eget, gravida in massa. Maecenas id mauris bibendum, feugiat magna ac, rhoncus velit. Aliquam placerat orci vel arcu gravida dapibus. Maecenas imperdiet, nunc nec tempor aliquet, elit nunc tincidunt ipsum, non venenatis neque justo non augue. Fusce vitae gravida purus. Donec eu ipsum quis tortor elementum feugiat.""";
 
     final imageConcept = Container(
       margin: EdgeInsets.only(top: 100.0, left: 10.0, bottom: 20.0),
@@ -33,7 +28,7 @@ class _PaintDescScreen extends State<PaintDescScreen> {
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
           image: DecorationImage(
               fit: BoxFit.fill,
-              image: AssetImage("assets/img/alamedapaint.jpg"))),
+              image: AssetImage("assets/img/principalEdificioTulum.jpg"))),
     );
 
     final descConcept = Container(
@@ -89,7 +84,7 @@ class _PaintDescScreen extends State<PaintDescScreen> {
               },
             ),
           ),
-          AppBarBackArrow("Alameda de México"),
+          AppBarBackArrow("Edificio principal tulum"),
         ],
       ),
     );

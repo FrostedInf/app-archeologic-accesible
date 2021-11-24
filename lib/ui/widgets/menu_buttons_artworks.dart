@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:munal_deafs_app/ui/screens/architec_list_screen.dart';
+import 'package:munal_deafs_app/ui/screens/general_list_screen.dart';
 
 class MenuButtonsArtworks extends StatefulWidget {
   final String menuName;
@@ -17,8 +17,6 @@ class MenuButtonsArtworks extends StatefulWidget {
       : super(key: key);
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
-
     return _MenuButtonsArtworks();
   }
 }
@@ -27,14 +25,12 @@ class _MenuButtonsArtworks extends State<MenuButtonsArtworks> {
   void onPressButton() {
     if (widget.identi == 2) {
       Navigator.push(context,
-          MaterialPageRoute(builder: (context) => ArchitecListScreen()));
+          MaterialPageRoute(builder: (context) => GeneralListScreen()));
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     final itemMenu = Container(
       margin: new EdgeInsets.only(
           top: widget.topContainer, left: 20.0, right: 20.0),

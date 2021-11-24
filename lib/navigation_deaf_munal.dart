@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:munal_deafs_app/ui/screens/artwork_types.dart';
+import 'package:munal_deafs_app/ui/screens/maps_screen.dart';
 import 'package:munal_deafs_app/ui/screens/glossary_list_screen.dart';
 
 class NavigationDeafMunal extends StatefulWidget {

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uv.munal_deafs_app">
    <application
-        android:label="munal_deafs_app"
+        android:label="tulum accesible"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

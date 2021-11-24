@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:munal_deafs_app/models/architecture.dart';
+import 'package:munal_deafs_app/models/pieza.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:munal_deafs_app/ui/widgets/card_architecture.dart';
+import 'package:munal_deafs_app/ui/widgets/card_pieza.dart';
 
-class ListViewArchitec extends StatefulWidget {
-  final List<Architecture> architects;
-  const ListViewArchitec({Key? key, required this.architects})
-      : super(key: key);
+class ListViewPieza extends StatefulWidget {
+  final List<Pieza> piezas;
+  const ListViewPieza({Key? key, required this.piezas}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _ListViewArchitec();
+    return _ListViewPieza();
   }
 }
 
-class _ListViewArchitec extends State<ListViewArchitec> {
-  List<Architecture> architecs = Architecture.getArchitectures();
+class _ListViewPieza extends State<ListViewPieza> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -26,9 +24,9 @@ class _ListViewArchitec extends State<ListViewArchitec> {
           child: ListView.builder(
               padding: EdgeInsets.all(20.0),
               scrollDirection: Axis.vertical,
-              itemCount: widget.architects.length,
+              itemCount: widget.piezas.length,
               itemBuilder: (BuildContext context, int index) {
-                return CardArchitecture(widget.architects[index]);
+                return CardArchitecture(widget.piezas[index]);
               }),
           isAlwaysShown: true,
           thickness: 6.0,

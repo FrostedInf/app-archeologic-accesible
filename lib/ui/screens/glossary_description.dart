@@ -14,12 +14,7 @@ class _GlosaryDescription extends State<GlosaryDescription> {
   @override
   Widget build(BuildContext context) {
     final String decription =
-        """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent 
-        dignissim consequat nisl in euismod. Sed mi est, luctus a posuere eget, 
-        gravida in massa. Maecenas id mauris bibendum, feugiat magna ac, rhoncus 
-        velit. Aliquam placerat orci vel arcu gravida dapibus. Maecenas imperdiet, 
-        nunc nec tempor aliquet, elit nunc tincidunt ipsum, non venenatis neque justo 
-        non augue. Fusce vitae gravida purus. Donec eu ipsum quis tortor elementum feugiat.""";
+        """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim consequat nisl in euismod. Sed mi est, luctus a posuere eget, gravida in massa. Maecenas id mauris bibendum, feugiat magna ac, rhoncus velit. Aliquam placerat orci vel arcu gravida dapibus. Maecenas imperdiet, nunc nec tempor aliquet, elit nunc tincidunt ipsum, non venenatis neque justo non augue. Fusce vitae gravida purus. Donec eu ipsum quis tortor elementum feugiat.""";
 
     final imageConcept = Container(
       margin: EdgeInsets.only(top: 100.0, left: 10.0, bottom: 20.0),
@@ -30,7 +25,7 @@ class _GlosaryDescription extends State<GlosaryDescription> {
           borderRadius: BorderRadius.all(Radius.circular(8.0)),
           image: DecorationImage(
               fit: BoxFit.fill,
-              image: NetworkImage("https://picsum.photos/250?image=1"))),
+              image: AssetImage("assets/img/principalEdificioTulum.jpg"))),
     );
 
     final descConcept = Container(

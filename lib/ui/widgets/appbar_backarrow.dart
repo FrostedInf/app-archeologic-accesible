@@ -10,19 +10,29 @@ class AppBarBackArrow extends StatelessWidget {
     return Container(
       height: 80.0,
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Colors.blueAccent, Colors.deepPurpleAccent],
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft)),
+        color: Theme.of(context).primaryColor,
+      ),
       child: Row(
         children: [
           TextButton.icon(
-            onPressed: (){
+            onPressed: () {
               Navigator.pop(context);
-            }, label: Text("", style: TextStyle( color: Colors.white),),icon: Icon(Icons.arrow_back, color: Colors.white,), ),
+            },
+            label: Text(
+              "",
+              style: TextStyle(color: Colors.white),
+            ),
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+            ),
+          ),
           Text(
             this.title,
-            style: TextStyle(color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold),
           ),
         ],
       ),
