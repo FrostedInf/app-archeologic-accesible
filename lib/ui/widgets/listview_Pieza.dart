@@ -26,7 +26,11 @@ class _ListViewPieza extends State<ListViewPieza> {
               scrollDirection: Axis.vertical,
               itemCount: widget.piezas.length,
               itemBuilder: (BuildContext context, int index) {
-                return CardArchitecture(widget.piezas[index]);
+                return Semantics(
+                  child: CardArchitecture(widget.piezas[index]),
+                  label: "Boton" + widget.piezas[index].name,
+                  excludeSemantics: true,
+                );
               }),
           isAlwaysShown: true,
           thickness: 6.0,

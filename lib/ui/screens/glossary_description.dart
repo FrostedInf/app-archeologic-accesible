@@ -44,7 +44,24 @@ class _GlosaryDescription extends State<GlosaryDescription> {
               child: ListView(
             padding: EdgeInsets.all(20.0),
             scrollDirection: Axis.vertical,
-            children: [imageConcept, VideoPlayerScreen(), descConcept],
+            children: [
+              Semantics(
+                child: imageConcept,
+                image: true,
+                label: 'imagen de concepto',
+              ),
+              Semantics(
+                child: AspectRatio(
+                  aspectRatio: 2 / 2,
+                  child: VideoPlayerScreen(),
+                ),
+                label: "video en lengua de señas mexicana",
+              ),
+              Semantics(
+                child: descConcept,
+                readOnly: true,
+              ),
+            ],
           )),
           AppBarBackArrow("Descripción"),
         ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:munal_deafs_app/ui/screens/maps_screen.dart';
+import 'package:munal_deafs_app/ui/screens/home_screen.dart';
 import 'package:munal_deafs_app/ui/screens/glossary_list_screen.dart';
 
 class NavigationDeafMunal extends StatefulWidget {
@@ -20,7 +19,7 @@ class _NavigationDeafMunal extends State<NavigationDeafMunal> {
   ];
 
   final List<Widget> pages = [
-    ArtworkTypes(),
+    HomeScreen(),
     GlossaryListScreen(),
   ];
 
@@ -42,7 +41,7 @@ class _NavigationDeafMunal extends State<NavigationDeafMunal> {
             unselectedItemColor: Colors.grey,
             backgroundColor: Colors.white,
             items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Mapa"),
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Inicio"),
               BottomNavigationBarItem(icon: Icon(Icons.book), label: "Glosario")
             ],
           ),
@@ -65,7 +64,10 @@ class _NavigationDeafMunal extends State<NavigationDeafMunal> {
   Map<String, WidgetBuilder> _routeBuilders(BuildContext context, int index) {
     return {
       '/': (context) {
-        return [ArtworkTypes(), GlossaryListScreen()].elementAt(index);
+        return [
+          HomeScreen(),
+          GlossaryListScreen(),
+        ].elementAt(index);
       },
     };
   }

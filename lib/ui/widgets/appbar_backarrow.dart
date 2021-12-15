@@ -14,17 +14,21 @@ class AppBarBackArrow extends StatelessWidget {
       ),
       child: Row(
         children: [
-          TextButton.icon(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            label: Text(
-              "",
-              style: TextStyle(color: Colors.white),
-            ),
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
+          Semantics(
+            excludeSemantics: true,
+            label: "Boton para volver a pantalla anterior",
+            child: TextButton.icon(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              label: Text(
+                "",
+                style: TextStyle(color: Colors.white),
+              ),
+              icon: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
             ),
           ),
           Text(

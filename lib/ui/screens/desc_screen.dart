@@ -47,43 +47,25 @@ class _DescScreen extends State<DescScreen> {
               child: ListView(
             padding: EdgeInsets.all(20.0),
             scrollDirection: Axis.vertical,
-            children: [imageConcept, descConcept],
+            children: [
+              Semantics(
+                child: imageConcept,
+                image: true,
+                label: 'imagen de exposición',
+              ),
+              Semantics(
+                child: AspectRatio(
+                  aspectRatio: 2 / 2,
+                  child: VideoPlayerScreen(),
+                ),
+                label: "video en lengua de señas mexicana",
+              ),
+              Semantics(
+                child: descConcept,
+                readOnly: true,
+              ),
+            ],
           )),
-          Container(
-            child: Draggable(
-              child: Container(
-                padding: EdgeInsets.only(top: top, left: left),
-                child: Container(
-                  height: 300.0,
-                  width: 180.0,
-                  child: VideoPlayerScreen(),
-                ),
-              ),
-              feedback: Container(
-                padding: EdgeInsets.only(top: top, left: left),
-                child: Container(
-                  height: 300.0,
-                  width: 180.0,
-                  child: VideoPlayerScreen(),
-                ),
-              ),
-              childWhenDragging: Container(
-                padding: EdgeInsets.only(top: top, left: left),
-                child: Container(
-                  height: 300.0,
-                  width: 180.0,
-                  child: VideoPlayerScreen(),
-                ),
-              ),
-              onDragCompleted: () {},
-              onDragEnd: (drag) {
-                setState(() {
-                  top = top + drag.offset.dy < 0 ? 0 : top + drag.offset.dy;
-                  left = left + drag.offset.dx < 0 ? 0 : left + drag.offset.dx;
-                });
-              },
-            ),
-          ),
           AppBarBackArrow("Edificio principal tulum"),
         ],
       ),

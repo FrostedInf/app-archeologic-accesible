@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:munal_deafs_app/ui/widgets/appbar_general.dart';
+import 'package:munal_deafs_app/ui/widgets/appbar_backarrow.dart';
 import 'package:munal_deafs_app/ui/widgets/mapicon_btn.dart';
 
-class ArtworkTypes extends StatelessWidget {
+class MapsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final imageMap = Container(
@@ -44,7 +44,7 @@ class ArtworkTypes extends StatelessWidget {
             )
           ],
         ),
-        AppBarGeneral("Tulum"),
+        AppBarBackArrow("Mapa"),
       ],
     );
   }

@@ -26,7 +26,11 @@ class _ListViewGlosary extends State<ListViewGlossary> {
               scrollDirection: Axis.vertical,
               itemCount: widget.concepts.length,
               itemBuilder: (BuildContext context, int index) {
-                return CardGlosary(widget.concepts[index]);
+                return Semantics(
+                  child: CardGlosary(widget.concepts[index]),
+                  label: "Boton" + widget.concepts[index].name,
+                  excludeSemantics: true,
+                );
               }),
           isAlwaysShown: true,
           thickness: 6.0,

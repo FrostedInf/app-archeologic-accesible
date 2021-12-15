@@ -23,6 +23,7 @@ class _MapIconBtn extends State<MapIconBtn> {
 
   @override
   Widget build(BuildContext context) {
+    final id = widget.identi;
     final indicatormap = TextButton.icon(
       onPressed: onPressButton,
       label: Text(
@@ -36,6 +37,10 @@ class _MapIconBtn extends State<MapIconBtn> {
       ),
     );
 
-    return indicatormap;
+    return Semantics(
+      child: indicatormap,
+      excludeSemantics: true,
+      label: "boton ubicacion $id",
+    );
   }
 }
