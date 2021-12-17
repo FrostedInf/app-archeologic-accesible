@@ -41,7 +41,7 @@ class _GeneralListScreen extends State<GeneralListScreen> {
   Widget buildSearch() => SearchWidget(
       text: query,
       onChanged: searchConcept,
-      hintText: 'Nombre de la pieciwza a buscar');
+      hintText: 'Nombre de la pieza a buscar');
 
   void searchConcept(String query) {
     final piezas = Pieza.getPiezas().where((concept) {

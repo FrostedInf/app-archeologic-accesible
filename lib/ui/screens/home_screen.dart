@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:munal_deafs_app/ui/screens/general_list_screen.dart';
 import 'package:munal_deafs_app/ui/screens/maps_screen.dart';
 import 'package:munal_deafs_app/ui/widgets/appbar_general.dart';
 
